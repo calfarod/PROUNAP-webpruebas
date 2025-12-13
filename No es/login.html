@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PROUNAP</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ======================= HEADER Y MENÚ DE NAVEGACIÓN ======================= -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">espaacios</a>
+            <nav class="main-nav" aria-label="Menú principal">
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#reportaje1">Reportaje 1</a></li>
+                    <li><a href="index.html#reportaje2">Reportaje 2</a></li>
+                    <li><a href="#login" class="login-button">Login</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+                <div class="bar"></div>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ======================= SECCIÓN HERO (PORTADA) ======================= -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>[ ESPACIO LOGIN HTML]</h1>
+                    <p>Bienvenido a PROUNAP. Accede a tu cuenta para continuar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= SECCIÓN LOGIN ======================= -->
+        <section id="login" class="p-section-light">
+            <div class="container">
+                <h2 class="section-title">Iniciar Sesión</h2>
+                <form class="login-form" action="procesar_login.php" method="POST">
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="text" id="email" name="correo" placeholder="tucorreo@ejemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" name="password" placeholder="********" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Ingresar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================= FOOTER ======================= -->
+    <footer class="footer">
+        <div class="container">
+            <p>espaacios</p>
+        </div>
+    </footer>
+
+    <!-- ======================= SCRIPT PARA HAMBURGER MENU ======================= -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            const expanded = hamburger.classList.contains('active');
+            hamburger.setAttribute('aria-expanded', expanded);
+        });
+    </script>
+
+</body>
+</html>

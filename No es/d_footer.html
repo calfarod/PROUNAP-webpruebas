@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Footer Morweb Adaptado na</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 4 / Bootstrap Icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #f6f6f6;
+        }
+        .footer-mw {
+            width: 100vw;
+            background: #181714;
+            color: #f5f5f5;
+            margin-left: -50vw;
+            left: 50%;
+            position: relative;
+            box-sizing: border-box;
+        }
+        .footer-mw .footer-logo-social {
+            padding: 40px 0 14px 0;
+        }
+        .footer-mw .footer-logo-social img {
+            height: 64px;
+        }
+        .footer-mw .footer-social-icons a {
+            color: #fff;
+            font-size: 1.7rem;
+            margin-left: 18px;
+            margin-right: 0;
+            transition: color 0.2s;
+        }
+        .footer-mw .footer-social-icons a:hover {
+            color: #7bc3b6;
+        }
+        .footer-mw .footer-divider {
+            border-top: 1.5px solid #444;
+            width: 100%;
+            margin: 18px 0 32px 0;
+        }
+        .footer-mw .footer-cols-main {
+            margin-bottom: 30px;
+        }
+        .footer-mw .footer-main-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 18px;
+            letter-spacing: 0.5px;
+        }
+        .footer-mw .footer-item {
+            margin-bottom: 11px;
+        }
+        .footer-mw .footer-main-content ul {
+            padding-left: 0;
+            list-style: none;
+        }
+        .footer-mw .footer-vertical-divider {
+            border-left: 1px solid #444;
+            height: 100%;
+        }
+        .footer-mw .footer-cols-main {
+            align-items: stretch;
+        }
+        @media (max-width: 992px) {
+            .footer-mw .footer-vertical-divider {
+                display:none;
+            }
+            .footer-mw .footer-cols-main > div {
+                margin-bottom: 20px;
+            }
+        }
+        .footer-mw .footer-resources-row .footer-main-title {
+            margin-top: 16px;
+        }
+        .footer-mw .footer-resources-col {
+            padding-bottom: 10px;
+        }
+        .footer-mw .footer-resources-row {
+            margin-bottom: 18px;
+        }
+        .footer-mw .footer-second-divider {
+            border-top: 1.5px solid #444;
+            width: 100%;
+            margin: 24px 0 18px 0;
+        }
+        .footer-mw .footer-bottom {
+            font-size: 1rem;
+            color: #ccc;
+            text-align: center;
+        }
+        #back-to-top-btn {
+            position: fixed;
+            right: 32px;
+            bottom: 32px;
+            background: #ffce39;
+            border: none;
+            color: #444;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            width: 48px;
+            height: 48px;
+            z-index: 99;
+            transition: background 0.2s,color 0.2s;
+        }
+        #back-to-top-btn:hover{
+            background: #569ce2;
+            color: #ffce3b;
+        }
+    </style>
+</head>
+<body>
+<!-- BODY & NAV -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background:#22221f;">
+  <a class="navbar-brand" href="#">MiWeb</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+<header style="background:#f6f6f6;text-align:center;padding:40px 0 20px 0;">
+    <h2 class="text-dark">Ejemplo completo Footer Bootstrap</h2>
+    <p class="text-secondary">Con distribución, íconos, divisores y logo a tu estilo</p>
+</header>
+<main class="container" style="min-height:300px;">&nbsp;</main>
+
+<!-- FOOTER -->
+<footer class="footer-mw">
+    <!-- Logo e íconos sociales -->
+    <div class="container-xl footer-logo-social">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 text-lg-left text-center mb-3 mb-lg-0">
+                <img src="img/logo2.jpg" alt="Logo">
+            </div>
+            <div class="col-12 col-lg-6 text-lg-right text-center">
+                <div class="footer-social-icons">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- línea horizontal fina -->
+    <div class="footer-divider"></div>
+
+    <!-- Sección principal en 5 columnas con separadores -->
+    <div class="container-xl">
+        <div class="row footer-cols-main d-flex">
+            <!-- Solutions -->
+            <div class="col-lg-2 col-sm-6 footer-main-content">
+                <div class="footer-main-title">Solutions</div>
+                <div class="footer-item"><i class="bi bi-mortarboard-fill mr-2"></i> Schools & Higher Education</div>
+                <div class="footer-item"><i class="bi bi-people-fill mr-2"></i> Associations & Memberships</div>
+                <div class="footer-item"><i class="bi bi-heart-fill mr-2"></i> Nonprofit Organizations</div>
+                <div class="footer-item"><i class="bi bi-hospital-fill mr-2"></i> Hospitals & Healthcare</div>
+            </div>
+            <div class="footer-vertical-divider d-none d-lg-block"></div>
+            <!-- About -->
+            <div class="col-lg-2 col-sm-6 footer-main-content">
+                <div class="footer-main-title">About</div>
+                <div class="footer-item"><i class="bi bi-info-circle mr-2"></i> Morweb CMS</div>
+                <div class="footer-item"><i class="bi bi-puzzle mr-2"></i> Modules</div>
+                <div class="footer-item"><i class="bi bi-eye mr-2"></i> Showcase</div>
+                <div class="footer-item"><i class="bi bi-chat-dots mr-2"></i> Testimonials</div>
+            </div>
+            <div class="footer-vertical-divider d-none d-lg-block"></div>
+            <!-- Resources -->
+            <div class="col-lg-2 col-sm-6 footer-main-content">
+                <div class="footer-main-title">Resources</div>
+                <div class="footer-item"><i class="bi bi-journals mr-2"></i> Blog</div>
+                <div class="footer-item"><i class="bi bi-life-preserver mr-2"></i> Support</div>
+                <div class="footer-item"><i class="bi bi-question-circle mr-2"></i> FAQs</div>
+                <div class="footer-item"><i class="bi bi-envelope mr-2"></i> Contact Us</div>
+            </div>
+            <div class="footer-vertical-divider d-none d-lg-block"></div>
+            <!-- Connect -->
+            <div class="col-lg-2 col-sm-6 footer-main-content">
+                <div class="footer-main-title">Connect</div>
+                <div class="footer-item"><i class="bi bi-telephone-inbound mr-2"></i> 403-263-1666</div>
+                <div class="footer-item"><i class="bi bi-envelope-check mr-2"></i> info@morweb.org</div>
+                <div class="footer-item"><i class="bi bi-calendar-check mr-2"></i> Mon-Fri</div>
+                <div class="footer-item"><i class="bi bi-clock mr-2"></i> 9:00am-5:00pm MST</div>
+            </div>
+            <div class="footer-vertical-divider d-none d-lg-block"></div>
+            <!-- Contact (puedes adaptar este bloque o quitarlo si prefieres solo los cuatro anteriores) -->
+            <div class="col-lg-2 col-sm-6 footer-main-content">
+                <div class="footer-main-title">Contact</div>
+                <div class="footer-item"><i class="bi bi-geo-alt-fill mr-2"></i> Ciudad y País</div>
+                <div class="footer-item"><i class="bi bi-globe mr-2"></i> www.miweb.com</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top resources en 4 columnas -->
+    <div class="footer-second-divider"></div>
+    <div class="container-xl">
+        <div class="row footer-resources-row text-center">
+            <div class="col-md-3 col-sm-6 footer-resources-col">
+                <div class="footer-main-title">Top Resources</div>
+                <div class="footer-item"><i class="bi bi-award mr-2"></i> Best School Website Designs</div>
+                <div class="footer-item"><i class="bi bi-award mr-2"></i> Best Nonprofit Websites</div>
+            </div>
+            <div class="col-md-3 col-sm-6 footer-resources-col">
+                <div class="footer-main-title">&nbsp;</div> <!-- Para alinear vertical -->
+                <div class="footer-item"><i class="bi bi-pc-display mr-2"></i> Website Builders for Nonprofits</div>
+                <div class="footer-item"><i class="bi bi-pc-display mr-2"></i> Website Builders for Schools</div>
+            </div>
+            <div class="col-md-3 col-sm-6 footer-resources-col">
+                <div class="footer-main-title">&nbsp;</div>
+                <div class="footer-item"><i class="bi bi-hospital mr-2"></i> Best Medical Website Builders</div>
+                <div class="footer-item"><i class="bi bi-people mr-2"></i> Membership Website Builders</div>
+            </div>
+            <div class="col-md-3 col-sm-6 footer-resources-col">
+                <div class="footer-main-title">&nbsp;</div>
+                <div class="footer-item"><i class="bi bi-book mr-2"></i> Best College Websites</div>
+                <div class="footer-item"><i class="bi bi-people mr-2"></i> Best Association Websites</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-divider" style="margin: 20px 0;"></div>
+
+    <!-- Copyright & subir -->
+    <div class="footer-bottom pb-4">
+        © 2025 MiWeb. Todos los derechos reservados.
+    </div>
+    <button id="back-to-top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+        <span><i class="bi bi-chevron-up"></i></span>
+    </button>
+</footer>
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

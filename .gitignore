@@ -1,0 +1,17 @@
+# Archivos específicos del Sistema Operativo macOS
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# Archivos de paquetes de IDEs comunes (ej. Visual Studio Code)
+.vscode/
+
+# Archivos de dependencias de Node.js (Si usas herramientas como Webpack, Babel, etc.)
+/node_modules
+
+# Archivos de log
+*.log
+npm-debug.log*
+
+# Archivos de compilación o de "build" (Si tu proyecto compila LESS/SASS a CSS)
+

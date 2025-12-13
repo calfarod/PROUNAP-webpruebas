@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Footer Morweb Adaptado Izquierda 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 4 / Bootstrap Icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #f6f6f6;
+        }
+        .footer-mw {
+            width: 100vw;
+            background: #181714;
+            color: #f5f5f5;
+            margin-left: -50vw;
+            left: 50%;
+            position: relative;
+            box-sizing: border-box;
+        }
+        .footer-mw .footer-logo-social {
+            padding: 40px 0 14px 0;
+        }
+        .footer-mw .footer-logo-social img {
+            height: 64px;
+        }
+        .footer-mw .footer-social-icons {
+            display: flex;
+            align-items: center;
+            height:100%;
+            margin-left: 0;
+        }
+        .footer-mw .footer-social-icons a {
+            color: #fff;
+            font-size: 1.7rem;
+            margin-left: 10px;
+            margin-right: 0;
+            transition: color 0.2s;
+            vertical-align: middle;
+        }
+        .footer-mw .footer-social-icons a:first-child {margin-left:0;}
+        .footer-mw .footer-social-icons a:hover {
+            color: #7bc3b6;
+        }
+        .footer-mw .footer-divider,
+        .footer-mw .footer-second-divider {
+            border-top: 1.5px solid #444;
+            width: 100%;
+            margin-top: 18px;
+            margin-bottom: 32px;
+        }
+        .footer-mw .footer-divider,
+        .footer-mw .footer-second-divider {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .footer-mw .footer-second-divider {
+            margin-top: 24px;
+            margin-bottom: 18px;
+        }
+        .footer-mw .footer-cols-main {
+            margin-bottom: 30px;
+        }
+        .footer-mw .footer-main-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 18px;
+            letter-spacing: 0.5px;
+        }
+        .footer-mw .footer-item {
+            margin-bottom: 11px;
+            text-align: left;
+        }
+        .footer-mw .footer-main-content ul {
+            padding-left: 0;
+            list-style: none;
+            text-align: left;
+        }
+        .footer-mw .footer-vertical-divider {
+            border-left: 1px solid #444;
+            height: 100%;
+        }
+        .footer-mw .footer-cols-main {
+            align-items: stretch;
+        }
+        @media (max-width: 992px) {
+            .footer-mw .footer-vertical-divider {
+                display:none;
+            }
+            .footer-mw .footer-cols-main > div {
+                margin-bottom: 20px;
+            }
+        }
+        .footer-mw .footer-resources-row .footer-main-title {
+            margin-top: 16px;
+            text-align: left;
+        }
+        .footer-mw .footer-resources-col {
+            padding-bottom: 10px;
+            text-align: left;
+        }
+        .footer-mw .footer-resources-row {
+            margin-bottom: 18px;
+        }
+        .footer-mw .footer-bottom {
+            font-size: 1rem;
+            color: #ccc;
+            text-align: left;
+            padding-left: 0;
+            display: flex;
+            align-items: center;
+            height:100%;
+        }
+        #back-to-top-btn {
+            position: fixed;
+            right: 32px;
+            bottom: 32px;
+            background: #181714;
+            border: none;
+            color: #fff;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            width: 48px;
+            height: 48px;
+            z-index: 99;
+            transition: background 0.2s,color 0.2s;
+        }
+        #back-to-top-btn:hover{
+            background: #7bc3b6;
+            color: #181714;
+        }
+    </style>
+</head>
+<body>
+<!-- BODY & NAV -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background:#22221f;">
+  <a class="navbar-brand" href="#">MiWeb</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+<header style="background:#f6f6f6;text-align:center;padding:40px 0 20px 0;">
+    <h2 class="text-dark">Footer Bootstrap Distribución 100% Personalizada</h2>
+    <p class="text-secondary">Logo, íconos, elementos alineados a la izquierda y copyright alineado</p>
+</header>
+<main class="container" style="min-height:300px;">&nbsp;</main>
+
+<!-- FOOTER -->
+<footer class="footer-mw">
+    <!-- Logo e íconos sociales, íconos alineados abajo -->
+    <div class="container-xl footer-logo-social">
+        <div class="row">
+            <div class="col-12 col-lg-6 text-left">
+                <img src="img/logo2.jpg" alt="Logo">
+            </div>
+            <div class="col-12 col-lg-6 text-left d-flex align-items-end justify-content-lg-start" style="height:64px;">
+                <div class="footer-social-icons">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- línea horizontal fina -->
+    <div class="footer-divider"></div>
+
+    <!-- Sección principal: Solutions (más ancho, grid interno) + 4 columnas + separadores finos -->
+    <div class="container-xl">
+        <div class="row footer-cols-main">
+            <!-- Solutions (col-lg-4) -->
+            <div class="col-lg-4 col-md-12 footer-main-content text-left">
+                <div class="footer-main-title">Solutions 1</div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="footer-item"><i class="bi bi-mortarboard-fill mr-2"></i> Schools & Higher Education</div>
+                        <div class="footer-item"><i class="bi bi-people-fill mr-2"></i> Associations & Memberships</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="footer-item"><i class="bi bi-heart-fill mr-2"></i> Nonprofit Organizations</div>
+                        <div class="footer-item"><i class="bi bi-hospital-fill mr-2"></i> Hospitals & Healthcare</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-vertical-divider d-none d-lg-block"></div>
+            <!-- About -->
+            <div class="col-lg-2 col-md-6 footer-main-content text-left">
+                <div class="footer-main-title">About</div>
+                <div class="footer-item"><i class="bi bi-info-circle mr-2"></i> Morweb CMS</div>
+                <div class="footer-item"><i class="bi bi-puzzle mr-2"></i> Modules</div>
+                <div class="footer-item"><i class="bi bi-eye mr-2"></i> Showcase</div>
+                <div class="footer-item"><i class="bi bi-chat-dots mr-2"></i> Testimonials</div>
+            </div>
+            <div class="footer-vertical-divider d-none d-lg-block"></div>
+            <!-- Resources -->
+            <div class="col-lg-2 col-md-6 footer-main-content text-left">
+                <div class="footer-main-title">Resources</div>
+                <div class="footer-item"><i class="bi bi-journals mr-2"></i> Blog</div>
+                <div class="footer-item"><i class="bi bi-life-preserver mr-2"></i> Support</div>
+                <div class="footer-item"><i class="bi bi-question-circle mr-2"></i> FAQs</div>
+                <div class="footer-item"><i class="bi bi-envelope mr-2"></i> Contact Us</div>
+            </div>
+            <div class="footer-vertical-divider d-none d-lg-block"></div>
+            <!-- Connect -->
+            <div class="col-lg-2 col-md-6 footer-main-content text-left">
+                <div class="footer-main-title">Connect</div>
+                <div class="footer-item"><i class="bi bi-telephone-inbound mr-2"></i> 403-263-1666</div>
+                <div class="footer-item"><i class="bi bi-envelope-check mr-2"></i> info@morweb.org</div>
+                <div class="footer-item"><i class="bi bi-calendar-check mr-2"></i> Mon-Fri</div>
+                <div class="footer-item"><i class="bi bi-clock mr-2"></i> 9:00am-5:00pm MST</div>
+            </div>
+            <div class="footer-vertical-divider d-none d-lg-block"></div>
+            <!-- Contact -->
+            <div class="col-lg-2 col-md-6 footer-main-content text-left">
+                <div class="footer-main-title">Contact</div>
+                <div class="footer-item"><i class="bi bi-geo-alt-fill mr-2"></i> Ciudad y País</div>
+                <div class="footer-item"><i class="bi bi-globe mr-2"></i> www.miweb.com</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top resources en 4 columnas + copyright alineado -->
+    <div class="footer-second-divider"></div>
+    <div class="container-xl">
+        <div class="row footer-resources-row align-items-center">
+            <div class="col-md-3 col-sm-6 footer-resources-col text-left">
+                <div class="footer-main-title">Top Resources</div>
+                <div class="footer-item"><i class="bi bi-award mr-2"></i> Best School Website Designs</div>
+                <div class="footer-item"><i class="bi bi-award mr-2"></i> Best Nonprofit Websites</div>
+            </div>
+            <div class="col-md-3 col-sm-6 footer-resources-col text-left">
+                <div class="footer-main-title">&nbsp;</div>
+                <div class="footer-item"><i class="bi bi-pc-display mr-2"></i> Website Builders for Nonprofits</div>
+                <div class="footer-item"><i class="bi bi-pc-display mr-2"></i> Website Builders for Schools</div>
+            </div>
+            <div class="col-md-3 col-sm-6 footer-resources-col text-left">
+                <div class="footer-main-title">&nbsp;</div>
+                <div class="footer-item"><i class="bi bi-hospital mr-2"></i> Best Medical Website Builders</div>
+                <div class="footer-item"><i class="bi bi-people mr-2"></i> Membership Website Builders</div>
+            </div>
+            <div class="col-md-3 col-sm-6 footer-resources-col text-left">
+                <div class="footer-main-title">&nbsp;</div>
+                <div class="footer-item"><i class="bi bi-book mr-2"></i> Best College Websites</div>
+                <div class="footer-item"><i class="bi bi-people mr-2"></i> Best Association Websites</div>
+                <!-- Copyright en la última columna (alineado con "Top Resources") -->
+                <div class="footer-bottom pt-4 pb-2">
+                    © 2025 MiWeb. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Botón subir -->
+    <button id="back-to-top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+        <span><i class="bi bi-chevron-up"></i></span>
+    </button>
+</footer>
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,1299 @@
+/* GENERAL */
+@font-face {
+    font-family: 'Chillax Variable';
+    src: url('../fonts/Chillax-Variable.woff2') format('woff2');
+    font-weight: 200 700;
+    font-display: swap;
+}
+
+/* Uso general de la fuente para todo el sitio */
+body {
+    font-family: 'Chillax Variable', Arial, sans-serif;
+    font-weight: 300;
+}
+
+/* Títulos principales */
+h1,
+h2 {
+    font-family: 'Chillax Variable', Arial, sans-serif;
+    font-weight: 200;
+}
+
+/* Subtítulos y títulos de tarjetas */
+h3,
+h4,
+h5,
+h6,
+.card-title {
+    font-family: 'Chillax Variable', Arial, sans-serif;
+    font-weight: 500;
+}
+
+/* Párrafos y textos secundarios */
+p,
+.card-text {
+    font-family: 'Chillax Variable', Arial, sans-serif;
+    font-weight: 300;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Chillax Variable', Arial, sans-serif;
+    font-weight: 500;
+    /* Igual que card-title */
+    letter-spacing: .5px;
+    /* Opcional: más elegancia */
+}
+
+/* Efecto hover para enlaces del menú */
+.navbar-nav .nav-link {
+    transition: color 0.2s, background 0.2s, font-weight 0.2s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #005593;
+    /* azul, cambia por tu color preferido */
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 6px;
+}
+
+/* LOGIN: fondo blanco, borde azul #005593, texto azul #005593 */
+.btn-outline-primary {
+    background-color: #fff;
+    color: #005593;
+    border-color: #005593;
+    font-weight: 500;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    background-color: #eaf3fb;
+    color: #005593;
+    border-color: #005593;
+    box-shadow: 0 0 6px #005593;
+    /*font-weight: 700;*/
+}
+
+/* REGISTRO: fondo azul #005593, borde azul #005593, texto blanco */
+.btn-primary {
+    background-color: #005593;
+    color: #fff;
+    border-color: #003052;
+    font-weight: 500;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #005593;
+    color: #fff;
+    border-color: #005593;
+    box-shadow: 0 0 8px #005593;
+    /*font-weight: 700;*/
+}
+
+/* secciones */
+.hero-section {
+    position: relative;
+    min-height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section-gradient1 {
+    background: linear-gradient(135deg, #005593 0%, #7c2ae8 50%, #24eaff 100%);
+    /* Ajusta los colores (#005593, #7c2ae8, #24eaff) según tu marca */
+    min-height: 50vh;
+    /* ajusta el alto según tu necesidad */
+}
+
+.floating-img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    border-radius: 1.5rem !important;
+}
+
+.floating-card {
+    margin-top: 60px;
+    box-shadow: 0 6px 32px 0 rgba(0, 0, 0, .18);
+    border-radius: 1.5rem;
+}
+
+.section-space {
+    min-height: 90vh;
+    padding-top: 10rem;
+    /* Ajusta el valor */
+    padding-bottom: 10rem;
+    /* Ajusta el valor */
+}
+
+/* Ajusta el alto de las imágenes dentro de las tarjetas para uniformidad */
+.card-img-top {
+    height: 300px;
+    /* puedes ajustar este valor según el diseño */
+    object-fit: cover;
+    /* recorta para que todas se vean bien */
+    width: 100%;
+    border-top-left-radius: 1.5rem !important;
+    border-top-right-radius: 1.5rem !important;
+}
+
+/* Iguala el alto de cada tarjeta en la fila */
+.row.g-4>.col-md-4 {
+    display: flex;
+}
+
+.card {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* El área de texto ocupa el mismo espacio */
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* footer */
+.footer-mw {
+    background: #181a20;
+    color: #f5f5f5;
+    font-family: 'Chillax Variable', Arial, sans-serif;
+    padding-top: 40px;
+    position: relative;
+}
+
+/* .footer-logo-social img {
+  max-width: 90px;
+  border-radius: 1.5rem;
+} */
+
+.footer-logo-social img {
+    max-width: 90px;
+    max-height: 100px;
+    border-radius: 0.2rem;
+    margin-left: 8px;
+    margin-right: 8px;
+    box-sizing: border-box;
+    /* background: #fff; */
+}
+
+
+.footer-social-icons a {
+    color: #f5f5f5;
+    margin: 0 10px;
+    font-size: 1.8rem;
+    transition: color 0.2s;
+}
+
+.footer-social-icons a:hover {
+    color: #ffd700;
+}
+
+.footer-divider,
+.footer-second-divider {
+    border-bottom: 1px solid #3a3c40;
+    margin: 24px 0 24px 0;
+}
+
+.footer-vertical-divider {
+    width: 1px;
+    background: #181a20;
+    margin: 0 1px;
+    height: auto;
+    display: inline-block;
+}
+
+.footer-main-title {
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.footer-item {
+    font-weight: 300;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    color: #e1e1e1;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #36383b;
+    margin-top: 22px;
+    padding-top: 15px;
+    font-size: 0.97rem;
+}
+
+#back-to-top-btn {
+    position: fixed;
+    right: 24px;
+    bottom: 36px;
+    z-index: 99;
+    background: #005593;
+    color: #ffd700;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    outline: none;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#back-to-top-btn:hover {
+    background: #ffd700;
+    color: #20232b;
+}
+
+@media (max-width: 767px) {
+    .footer-logo-social img {
+        margin-bottom: 15px;
+    }
+
+    .footer-cols-main .footer-vertical-divider {
+        display: none !important;
+    }
+}
+
+/* Panel emergente del menú nav */
+/* .nav-panel {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  min-width: 320px;
+  max-width: 90vw;
+  border-radius: 1.5rem;
+  z-index: 1000;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.18);
+  display: none;
+  transition: opacity 0.25s;
+}
+@media (max-width: 767px) {
+  .nav-panel {
+    left: 0;
+    transform: none;
+    min-width: 220px;
+    width: 90vw;
+    padding: 1rem !important;
+  }
+}
+
+/* Transición suave */
+/*.nav-panel.show {
+  display: block;
+  opacity: 1;
+  animation: floatDown 0.7s ease;
+}
+
+@keyframes floatDown {
+  from { opacity: 0; transform: translateY(-12px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.nav-panel.nav-mega {
+  min-width: 100px;
+  max-width: 520vw;
+}
+@media (max-width: 767px) {
+  .nav-panel.nav-mega {
+    min-width: 240px;
+    width: 98vw;
+    padding: 1rem !important;
+  }
+}
+ */
+/* Botón específico del mega menú */
+
+.nav-panel,
+.nav-mega {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 4px 24px 0 rgba(60, 122, 209, 0.07), 0 1.5px 4px 0 rgba(60, 122, 209, 0.07);
+    border-radius: 1.25rem;
+    width: 700px;
+    /* ancho fijo ayuda a calcular posición antes de mostrar */
+    min-width: 700px;
+    max-width: 98vw;
+    margin-top: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    /* Oculto pero mantiene flow y posición */
+    pointer-events: none;
+    transition: opacity .18s linear, visibility .18s linear;
+    will-change: transform, left;
+}
+
+/* Estado visible */
+.nav-panel.show,
+.nav-mega.show {
+    opacity: 1;
+    visibility: visible;
+    /* Se vuelve visible sin saltos */
+    pointer-events: auto;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+
+    .nav-panel,
+    .nav-mega {
+        left: 0;
+        transform: none;
+        min-width: 220px;
+        width: 90vw;
+        padding: 1rem !important;
+    }
+}
+
+/* cambio */
+.mega-menu-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.mega-menu-icon {
+    min-width: 38px;
+    /* igual para todos los íconos */
+    text-align: center;
+}
+
+.mega-menu-col-label {
+    min-width: 160px;
+    /* mismo ancho fija los celestes alineados */
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.mega-menu-col-desc {
+    flex: 1 1 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.mega-menu-subtitle {
+    color: #569ce2;
+    font-weight: 700;
+    font-size: 1.09rem;
+}
+
+.mega-menu-desc {
+    color: #2d4158;
+    font-weight: 400;
+    font-size: 0.99rem;
+}
+
+/* mega-menu-btn */
+.mega-menu-btn {
+    background-color: #005593;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px 0 rgba(0, 85, 147, 0.15);
+    transition: background 0.2s, box-shadow 0.2s;
+    font-size: 1.09rem;
+}
+
+.mega-menu-btn:hover,
+.mega-menu-btn:focus {
+    background-color: #569ce2;
+    color: #fff;
+    box-shadow: 0 4px 18px 0 rgba(86, 156, 226, 0.21);
+}
+
+/* Color a íconos si prefieres por clase */
+.mega-menu-icon,
+.mega-menu-subtitle {
+    color: #569ce2 !important;
+}
+
+/* Quiénes somos */
+/* Estilo base para el panel (compartido) */
+#navPanelQuienes {
+    /* Si deseas que este menú tenga fondo distinto: */
+    /* background: #eaf7ff;           azul suave */
+    /* border-left: 6px solid #005593; */
+}
+
+/* Ejemplo de personalización de botón solo en este panel: */
+#navPanelQuienes .mega-menu-btn {
+    background: #005593;
+    color: #fff;
+}
+
+/* Ejemplo: cambiar el color del título solo en Quiénes Somos */
+#navPanelQuienes h4 {
+    color: #005593;
+}
+
+
+
+/* Contacto */
+.custom-border {
+    border: 1px solid #005593 !important;
+}
+
+@media (max-width: 991.98px) {
+    .hero-section .col-lg-6 {
+        margin-bottom: 2rem;
+    }
+
+    .hero-section .row {
+        flex-direction: column;
+    }
+}
+
+/* Estilo anuncio fiesta */
+
+.anuncio {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 24px auto;
+    /* Centrado horizontal y espacio arriba/abajo */
+    display: block;
+    position: relative;
+    left: unset;
+    top: unset;
+}
+
+@media (max-width: 800px) {
+    .anuncio {
+        max-width: 140px;
+    }
+}
+
+@media (max-width: 500px) {
+    .anuncio {
+        max-width: 100px;
+    }
+}
+
+
+.annual25-card-link {
+    position: absolute;
+    right: 62vw;
+    bottom: 4vw;
+    z-index: 10;
+    width: 340px;
+    /* puedes ajustar el ancho */
+    height: auto;
+    display: block;
+    transition: transform 0.18s, box-shadow 0.18s;
+}
+
+.annual25-float-img {
+    width: 100%;
+    max-width: 440px;
+    border-radius: 1.2rem;
+    box-shadow: 0 8px 32px rgba(60, 122, 209, 0.14), 0 2px 8px rgba(60, 122, 209, 0.09);
+    display: block;
+    cursor: pointer;
+    object-fit: cover;
+    transition: box-shadow 0.22s, transform 0.22s;
+}
+
+.annual25-card-link:hover .annual-float-img,
+.annual25-card-link:focus .annual-float-img {
+    box-shadow: 0 12px 38px 8px #00559333;
+    transform: scale(1.04);
+}
+
+@media (max-width: 576px) {
+    .annual25-card-link {
+        right: 1vw;
+        bottom: 1vw;
+        width: 94vw;
+        max-width: 93vw;
+        left: 3vw;
+    }
+
+    .annual25-float-img {
+        max-width: 100vw;
+    }
+}
+
+
+
+.btn-pill {
+    border-radius: 999px !important;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #005593 !important;
+    color: #fff !important;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0 2px 10px 0 rgba(0, 85, 147, 0.13);
+    transition: background 0.18s, box-shadow 0.18s;
+}
+
+.btn-pill:hover,
+.btn-pill:focus {
+    background-color: #0077d6 !important;
+    color: #fff !important;
+    box-shadow: 0 4px 18px 0 rgba(0, 85, 147, 0.22);
+}
+
+/* Color azul institucional para textos */
+.text-blue {
+    color: #005593 !important;
+    text-shadow: none !important;
+}
+
+/* Sugerencia para buen contraste si la imagen de fondo es clara:
+           podrías agregar un leve sombreado si lo necesitas.
+           Si no, basta con el color azul. */
+
+
+
+/* Contacto */
+.btn-pill {
+    border-radius: 999px !important;
+    padding-left: 1em;
+    /* menos padding horizontal */
+    padding-right: 1em;
+    background-color: #005593 !important;
+    color: #fff !important;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0 2px 10px 0 rgba(0, 85, 147, 0.13);
+    transition: background 0.18s, box-shadow 0.18s;
+}
+
+.btn-pill:hover,
+.btn-pill:focus {
+    background-color: #0077d6 !important;
+    color: #fff !important;
+    box-shadow: 0 4px 18px 0 rgba(0, 85, 147, 0.22);
+}
+
+.feature-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.feature-list li {
+    margin-bottom: .7em;
+}
+
+.feature-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.feature-list li {
+    color: #fff !important;
+    font-size: 1.15em;
+    position: relative;
+    margin-bottom: .7em;
+}
+
+.feature-list li::marker {
+    color: #fff;
+    font-size: 2em;
+    /* ¡Haz el bullet más grande! */
+}
+
+
+/* Red Profesional */
+.rp-box {
+    border-radius: 2rem;
+    height: 100%;
+    min-height: 700px;
+    width: 100%;
+    display: flex;
+    background-clip: padding-box;
+}
+
+.rp-box-left {
+    background-color: rgba(44, 182, 255, 0.20);
+    /* Celeste con 30% opacidad */
+}
+
+.rp-box-right {
+    background-color: rgba(255, 92, 180, 0.20);
+    /* Rosado con 30% opacidad */
+}
+
+.btn-pill {
+    border-radius: 999px !important;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #005593 !important;
+    color: #fff !important;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0 2px 10px 0 rgba(0, 85, 147, 0.13);
+    transition: background 0.18s, box-shadow 0.18s;
+}
+
+.btn-pill:hover,
+.btn-pill:focus {
+    background-color: #0077d6 !important;
+    color: #fff !important;
+    box-shadow: 0 4px 18px 0 rgba(0, 85, 147, 0.22);
+}
+
+
+/* Sección 5 - Reflexiones */
+.rp-box2 {
+    border-radius: 2rem;
+    height: 100%;
+    min-height: 700px;
+    width: 100%;
+    display: flex;
+    background-clip: padding-box;
+}
+
+.rp-box2-left {
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Celeste con 30% opacidad */
+}
+
+.rp-box2-right {
+    background-color: rgba(255, 92, 180, 0.00);
+    /* Rosado con 30% opacidad */
+}
+
+.btn-pill {
+    border-radius: 999px !important;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #005593 !important;
+    color: #fff !important;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0 2px 10px 0 rgba(0, 85, 147, 0.13);
+    transition: background 0.18s, box-shadow 0.18s;
+}
+
+.btn-pill:hover,
+.btn-pill:focus {
+    background-color: #0077d6 !important;
+    color: #fff !important;
+    box-shadow: 0 4px 18px 0 rgba(0, 85, 147, 0.22);
+}
+
+
+
+
+
+
+
+/* Imagen centrada y redondeada en la caja derecha */
+.rp-img {
+    border-radius: 2rem;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-width: 90%;
+    max-height: 80%;
+    box-shadow: 0 4px 20px 0 rgba(0, 85, 147, 0.18);
+    background: #fff;
+    /* Opcional: agrega fondo si la imagen tiene transparencia */
+}
+
+@media (max-width: 991.98px) {
+    .rp-box {
+        border-radius: 1.2rem;
+        min-height: 180px;
+    }
+
+    .rp-img {
+        border-radius: 1.2rem;
+    }
+
+    .rp-box-left,
+    .rp-box-right {
+        padding: 1.2rem;
+    }
+}
+
+
+/* Contacto */
+
+
+/* Contacto */
+.custom-border {
+    border: 1px solid #005593 !important;
+}
+
+@media (max-width: 991.98px) {
+    .hero-section .col-lg-6 {
+        margin-bottom: 2rem;
+    }
+
+    .hero-section .row {
+        flex-direction: column;
+    }
+}
+
+
+/* Reflexiones */
+/* Container superior celeste transparente */
+.container-superior {
+    /* background: rgba(44, 182, 255, 0.20); Celeste 20% */
+    width: 100vw;
+    min-height: 750px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-superior h2 {
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, .12);
+}
+
+/* Huincha azul */
+.container-huincha {
+    background: rgba(0, 85, 147, 0.50);
+    /* Azul 005593, 50% transparente */
+    width: 100vw;
+    height: 200px;
+    min-height: 120px;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.huincha-text {
+    color: #fff;
+    font-size: 1.4rem;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+/* Container del botón (transparente, de lado a lado) */
+.container-boton {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding-top: 2rem;
+    padding-bottom: 2.2rem;
+}
+
+/* Estilo del botón píldora */
+.btn-pill {
+    border-radius: 999px !important;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: #005593 !important;
+    color: #fff !important;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0 2px 10px 0 rgba(0, 85, 147, 0.13);
+    transition: background 0.18s, box-shadow 0.18s;
+}
+
+.btn-pill:hover,
+.btn-pill:focus {
+    background-color: #0077d6 !important;
+    color: #fff !important;
+    box-shadow: 0 4px 18px 0 rgba(0, 85, 147, 0.22);
+}
+
+@media (max-width: 991.98px) {
+    .container-superior h2 {
+        font-size: 2.2rem;
+    }
+
+    .huincha-text {
+        font-size: 1.05rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+
+    .container-huincha {
+        height: auto;
+        min-height: 100px;
+    }
+
+    .btn-pill {
+        font-size: 1.05rem;
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container-superior {
+        min-height: 100px;
+    }
+
+    .container-huincha {
+        min-height: 80px;
+    }
+
+    .container-superior h2 {
+        font-size: 1.25rem;
+    }
+
+    .huincha-text {
+        font-size: 0.96rem;
+    }
+}
+
+/* Únete */
+.btn-pill {
+    border-radius: 999px !important;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    background-color: #005593 !important;
+    color: #fff !important;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0 2px 10px 0 rgba(0, 85, 147, 0.13);
+    transition: background 0.18s, box-shadow 0.18s;
+}
+
+.btn-pill:hover,
+.btn-pill:focus {
+    background-color: #0077d6 !important;
+    color: #fff !important;
+    box-shadow: 0 4px 18px 0 rgba(0, 85, 147, 0.22);
+}
+
+/* Opcional: ajusta radios y ancho mínimo en responsive */
+@media (max-width: 991.98px) {
+
+    .container-contenido,
+    .container-izquierdo,
+    .container-flor {
+        min-width: 80px;
+        border-radius: 1.1rem !important;
+    }
+
+    .container-contenido {
+        padding: 1.2rem;
+    }
+
+    .btn-pill {
+        width: 100%;
+        min-width: 160px;
+    }
+
+    h2.display-4 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .d-flex.flex-row.align-items-stretch {
+        flex-direction: column;
+        min-height: 200px;
+    }
+
+    .container-izquierdo,
+    .container-flor,
+    .container-contenido {
+        min-width: 0;
+        width: 100%;
+        max-width: none;
+        margin-bottom: 1rem;
+        border-radius: 1rem !important;
+    }
+}
+
+/* webmail */
+
+.webmail-icon-link i {
+    font-size: 2.6rem;
+    /* Mucho más grande que el original */
+    color: #005593;
+    /* Azul principal */
+    transition: color 0.2s;
+}
+
+.webmail-icon-link:hover i {
+    color: #569ce2;
+    /* Azul claro en hover */
+}
+
+/* Únete */
+.section-featured {
+    background-image: url('../img/pimg23.jpg');
+    background-size: cover;
+    /* Para que cubra todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita repeticiones */
+    min-height: 1000px;
+}
+
+@media (max-width: 991px) {
+    .section-featured {
+        min-height: 500px;
+        /* O ajusta según la necesidad en dispositivos pequeños */
+    }
+}
+
+
+/* Sección Directiva */
+.section-featured-directiva {
+    background-size: cover;
+    /* Para que cubra todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita repeticiones */
+    min-height: 700px;
+}
+
+@media (max-width: 991px) {
+    .section-featured-directiva {
+        min-height: 500px;
+        /* O ajusta según la necesidad en dispositivos pequeños */
+    }
+}
+
+/* Afiche */
+
+.imagenes-verticales {
+    display: flex;
+    flex-direction: column;
+    /* Apila en vertical */
+    gap: 0;
+    /* Sin espacio entre imágenes */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.imagenes-verticales img {
+    display: block;
+    width: 100%;
+    /* Cada imagen ocupa todo el ancho del contenedor */
+    height: auto;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    /* Recorte inteligente si lo necesitas */
+    border: none;
+}
+
+
+
+
+
+/* Zona central donde cada sección lleva fondo de imagen y texto superpuesto */
+.catastro-central {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.bloque-fondo-img {
+    position: relative;
+    width: 100%;
+    min-height: 320px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 0 6px 24px rgba(0, 85, 147, 0.10);
+    padding-top: 4em;
+}
+
+/* Imagen 1 con texto arriba */
+.catastro-img1 {
+    background-image: url('../img/afi1.jpg');
+    height: 1700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Texto pegado arriba */
+    align-items: stretch;
+}
+
+/* Imagen 2 con texto centrado-arriba */
+.catastro-img2 {
+    background-image: url('../img/afi2.jpg');
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Arriba, pero centrado */
+    align-items: center;
+    /* Centrado horizontal */
+}
+
+/* El bloque de texto */
+.bloque-texto {
+    width: auto;
+    text-align: justify;
+    color: #ffffff;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0, 85, 147, 0.11);
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 22px 12px;
+}
+
+/* Ajuste para cada posición individual si quieres más precisión */
+.posicion-texto-top .bloque-texto {
+    margin-top: 16px;
+    margin-bottom: 0;
+    align-self: flex-start;
+}
+
+.posicion-texto-centro-arriba .bloque-texto {
+    margin-top: 38px;
+    margin-bottom: 0;
+    align-self: center;
+}
+
+.bloque-texto h2,
+.bloque-texto h3 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.bloque-texto p {
+    color: #005593;
+    font-weight: 500;
+    font-size: 1.12rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+/* estudio.html section estudio */
+
+/* css básico */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra todas las secciones horizontalmente */
+    gap: 0rem;
+    /* Espaciado entre secciones */
+}
+
+secttion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    text-align: center;
+}
+
+
+.section-demo {
+    width: 1200px;
+    height: 1000px;
+    background-position: center;
+    display: grid;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0rem;
+    background-image: url('../img/afi1.jpg');
+    background-size: cover;
+    /* Para que cubra todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita repeticiones */
+    min-height: 1000px;
+}
+
+.section-demo2 {
+    width: 1200px;
+    height: 600px;
+    background-position: center;
+    display: grid;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0rem;
+    min-height: 1000px;
+}
+
+.gradiente {
+    background: linear-gradient(135deg, #e81078 10%, #7c2ae8 50%, #24eaff 80%);
+}
+
+.blanco {
+    background-color: rgb(255, 255, 255);
+}
+
+.negro {
+    background-color: #000;
+}
+
+.azul {
+    background-color: #005593;
+}
+
+.rectangulo {
+    width: 700px;
+    height: 350px;
+    background: rgba(180, 125, 125, 0.9);
+    position: absolute;
+    top: 10px;
+    left: 500px;
+    /* background-color: beige; */
+    /* background: rgba(255, 105, 180, 0.2); rosado y 20% opacidad */
+    border-radius: 10px;
+    /* position: absolute; */
+    /* La posición se gobernará con las clases de alineación */
+}
+
+
+
+.rectangulo0 {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top: 10px;
+    left: 500px;
+    background: rgba(255, 105, 180, 0.2);
+    /* rosado y 20% opacidad */
+    border-radius: 10px;
+    /* position: absolute; */
+    /* La posición se gobernará con las clases de alineación */
+}
+
+#centro-arriba {
+    position: absolute;
+    top: 100px;
+}
+
+/* responsive */
+@media (max-width: 800px) {
+    .section-demo {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .rectangulo {
+        width: 60vw;
+        height: 80vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .section-demo {
+        width: 100vw;
+        height: 100vw;
+    }
+
+    .rectangulo {
+        width: 90vw;
+        height: 60vw;
+    }
+
+    .rectangulo {
+        /* Ejemplo: Siempre al centro en móviles */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Cookie Consent Banner */
+#cookieConsent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #181a20;
+    color: #fff;
+    padding: 20px;
+    z-index: 9999;
+    display: none;
+    /* Hidden by default, shown by JS */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#cookieConsent.show {
+    transform: translateY(0);
+}
+
+.cookie-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.cookie-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.cookie-text a {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+.cookie-text a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .cookie-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cookie-btn {
+        width: 100%;
+    }
+}
