@@ -16,7 +16,7 @@
     // Nota: El código PHP no genera HTML, solo define variables
 ?>    
     
-<!-- Navbar -->
+<!-- Navbar Versión 1-->
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white shadow-sm py-0">
     <div class="container-fluid">
         <a class="navbar-brand me-3" href="#">
@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="mainNav">
             <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
 
-                <li class="nav-item <?php if ($pagina_actual == 'index.php') echo 'active'; ?>"><a class="nav-link" href="index.php" target="_self">:::HOME</a>
+                <li class="nav-item <?php if ($pagina_actual == 'index.php') echo 'active'; ?>"><a class="nav-link" href="index.php" target="_self">HOME</a>
                 </li>
 
                 <!-- QUIÉNES SOMOS -->
@@ -71,4 +71,4 @@
         </div>
     </div>
 </nav>
-<!-- fin del nav -->
+<!-- fin del Navbar Versión 1 -->
