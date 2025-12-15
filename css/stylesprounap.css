@@ -36,6 +36,16 @@ p,
     font-weight: 300;
 }
 
+.navbar-nav .nav-item.active .nav-link {
+    /* Aumenta el grosor de la fuente. 
+       Puedes usar 'bold' o un valor numérico (600, 700, 800) si tu fuente lo soporta. */
+    font-weight: 650;
+    /* Esto crea el subrayado personalizado sin usar la propiedad 'text-decoration' */
+    border-bottom: 2px solid #ff7f00; /* Color naranja vibrante. Puedes ajustarlo. */
+    /* Opcional: Esto añade un pequeño espacio entre el texto y el subrayado */
+    padding-bottom: 3px;
+}
+
 .navbar-nav .nav-link {
     font-family: 'Chillax Variable', Arial, sans-serif;
     font-weight: 500;

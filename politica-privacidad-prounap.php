@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quiénes Somos :: Prounap</title>
+    <title>Política de Privacidad -txt- Prounap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.png">
 
     <!-- Bootstrap 4 / Bootstrap Icons -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link href="css/stylesprounap.css" rel="stylesheet">
+    <link href="css/stylespoliticaprivacidad.css" rel="stylesheet">
 
     <style>
         @font-face {
             font-family: 'Chillax Variable';
-            src: url('../fonts/Chillax Variable.woff2') format('woff2');
+            src: url('fonts/Chillax-Variable.woff2') format('woff2');
             font-weight: 100 900;
             font-display: swap;
         }
@@ -30,114 +30,140 @@
 <body class="bg-light">
 
     <!-- Navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white shadow-sm py-0">
-        <div class="container-fluid">
-            <a class="navbar-brand me-3" href="#">
-                <img src="img/logo3.png" height="48" alt="Logo">
-            </a>
-            <!-- Botón hamburguesa -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="mainNav">
-                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
-
-                    <li class="nav-item"><a class="nav-link" href="index.html" target="_self">HOME</a>
-                    </li>
-
-                    <!-- QUIÉNES SOMOS -->
-
-                    <li class="nav-item active"><a class="nav-link" href="quienes-somos.html" target="_self">Quiénes
-                            Somos</a></li>
-
-                    <!-- RED PROFESIONAL -->
-
-                    <li class="nav-item"><a class="nav-link" href="red-profesional.html" target="_self">Red
-                            Profesional</a>
-                    </li>
-
-                    <!-- REFLEXIONES -->
-
-                    <li class="nav-item"><a class="nav-link" href="reflexiones.html" target="_self">Reflexiones</a>
-                    </li>
-
-                    <!-- ÚNETE -->
-
-                    <li class="nav-item"><a class="nav-link" href="unete.html" target="_self">Únete</a>
-                    </li>
-
-                    <li class="nav-item"><a class="nav-link" href="contacto.html" target="_self">Contacto</a>
-                    </li>
-
-                </ul>
-                <!-- Login y Registro a la derecha -->
-                <div class="d-flex ms-lg-3">
-                    <a href="#" target="_self" class="btn btn-outline-primary me-2">Login</a>
-                    <!-- <a href="#" target="_self" class="btn btn-primary me-2">Registro</a> -->
-                </div>
-                <div>
-                    <a href="https://prounap.cl/webmail" target="_blank" class="webmail-icon-link me-2">
-                        <i class="bi bi-envelope-check-fill"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <?php
+        require_once 'includes/nav1.php'; 
+    ?>
     <!-- fin del nav -->
 
+    <!-- estudio0 -->
+    <main>
+        <!-- Sección Detalles -->
+        <section class="instrucciones-section">
+            <h2 class="instrucciones-title">Política de Privacidad Prounap</h2>
 
-    
-    <!-- Sección 3 - Qs-->
-    <section class="section-featured bg-white py-5"
-        style="background: url('img/pimg16.jpg') center center / cover no-repeat;">
-        <div class="container py-5">
-            <h2 class="display-4 fw-bold text-center mb-5 text-white">Quiénes Somos</h2>
-            <div class="row align-items-center">
-                <!-- Contenedor Izquierda: Imagen -->
-                <div class="col-md-6 d-flex justify-content-center">
-                    <img src="img/pimg2.jpg" alt="Imagen destacada" class="img-fluid rounded-4"
-                        style="height:660px; object-fit:cover; max-width:100%;">
-                </div>
-                <!-- Contenedor Derecha: Texto, bullets y botón -->
-                <div class="col-md-6 d-flex flex-column justify-content-center px-md-5 mt-4 mt-md-0">
-                    <p class="lead mb-4 text-white">
-                        Toda buena relación comienza con una presentación, permítanos dar el inicio:
+            <div class="spacer"></div>
+
+            <ul class="icon-list">
+                <li>
+                    <span id="pesada">1. Introducción</span>
+                    <p>La Red de Profesionales y Exalumnos de la Universidad Arturo Prat (Prounap)
+                        valora la privacidad de sus miembros y se compromete a proteger los datos personales que
+                        recopila, procesa y almacena. Esta política explica cómo se manejan los datos personales en
+                        todas las actividades realizadas a través del sitio web prounap.cl y otros canales digitales
+                        asociados.
                     </p>
-                    <ul class="feature-list mb-4">
-                        <li>
-                            <p class="lead mb-2 text-white">Somos la Asociación de Egresados y Titulados de la
-                                Universidad Arturo Prat (PROUNAP).</p>
-                        </li>
-                        <li>
-                            <p class="lead mb-2 text-white">Somos una red que reúne a profesionales de todas las
-                                carreras de la Universidad Arturo Prat, fundada en 2018 en Iquique. PROUNAP tiene como
-                                finalidad principal:
-                            </p>
-                        </li>
-                        <li>
-                            <p class="lead mb-2 text-white">Fortalecer la vinculación, colaboración y apoyo mutuo entre
-                                sus miembros, promoviendo el desarrollo profesional, la excelencia académica y el
-                                compromiso social.
-                            </p>
-                        </li>
-                        <li>
-                            <p class="lead mb-2 text-white">Impulsamos actividades, proyectos y espacios de
-                                perfeccionamiento, con principios de ética, transparencia y servicio.
-                            </p>
-                        </li>
-                        <li>
-                            <p class="lead mb-2 text-white">Nuestra red fomenta la integración activa, la participación
-                                democrática y la contribución positiva al entorno universitario y a la sociedad en
-                                general.
-                            </p>
-                        </li>
+                </li>
+                <li>
+                    <span id="pesada">2. Finalidad del tratamiento de datos</span>
+                    <p>Los datos personales recopilados por Prounap se utilizan exclusivamente para:
+                    <ul id="interior">
+                        <li>Fortalecer la comunidad profesional y académica de exalumnos.</li>
+                        <li>Facilitar oportunidades de vinculación laboral y de colaboración.</li>
+                        <li>Diseñar servicios, actividades y contenidos relevantes para los miembros.</li>
+                        <li>Mantener una comunicación institucional efectiva sobre eventos, noticias y programas
+                            universitarios.</li>
                     </ul>
-                </div>
-            </div> 
-    </section>
+                    </p>
 
-    <!-- FOOTER -->
+                </li>
+                <li>
+                    <span id="pesada">3. Principios de tratamiento responsable</span>
+                    <p>
+                    Prounap garantiza el cumplimiento de los principios de licitud, finalidad, proporcionalidad,
+                    transparencia, seguridad y confidencialidad, de acuerdo con la legislación chilena vigente y las
+                    mejores prácticas internacionales de protección de datos.
+                    </p>
+                </li>
+                <li>
+                    <span id="pesada">4. Tipos de datos recopilados</span>
+                    <p>Podrán recopilarse datos tales como:</p>
+                    <p>
+                    <ul id="interior">
+                        <li>Datos de identificación: nombre completo, RUT, dirección de correo electrónico, carrera y
+                            año de
+                            egreso.</li>
+
+                        <li>Información profesional: cargo actual, institución, experiencia laboral, áreas de
+                            especialización,
+                            intereses profesionales.</li>
+
+                        <li>Preferencias de comunicación: frecuencia y tipo de información que el usuario desea recibir.
+                        </li>
+
+                        <li>Datos de navegación: uso de cookies y herramientas de análisis web para mejorar la
+                            experiencia del
+                            usuario.</li>
+                    </ul>
+                    </p>
+                </li>
+                <li>
+                    <span id="pesada">5. Obtención del consentimiento</span>
+                    <p>El registro y participación en Prounap son voluntarios. Al inscribirse en la red, el usuario
+                    autoriza expresamente el uso de sus datos conforme a los fines descritos. El consentimiento puede
+                    ser revocado en cualquier momento mediante solicitud escrita o correo electrónico.
+                    </p>
+                </li>
+                <li>
+                    <span id="pesada">6. Uso, conservación y resguardo de la información</span>
+                    <p>Los datos personales se almacenan en servidores protegidos y accesibles únicamente por personal
+                    autorizado. Se aplican medidas técnicas y administrativas que buscan prevenir el acceso no
+                    autorizado, la pérdida, alteración o uso indebido de la información.
+                    Prounap no comparte datos personales con terceros sin autorización expresa del titular, salvo
+                    exigencia legal o convenios debidamente suscritos que mantengan los estándares de protección
+                    exigidos.</p>
+                </li>
+                <li>
+                    <span id="pesada">7. Derechos de los titulares de datos</span>
+                    <p>Cada usuario puede ejercer sus derechos de:
+                    <ul id="interior">
+                        <li>Acceso a sus datos personales y a la información sobre su tratamiento.</li>
+
+                        <li>Rectificación y actualización de los datos inexactos o incompletos.</li>
+
+                        <li>Eliminación o cancelación de sus datos cuando corresponda.</li>
+
+                        <li>Oposición o limitación al tratamiento, según los términos de la normativa vigente.</li>
+
+                        <li>Portabilidad de sus datos personales, si aplica.</li>
+                    </ul>
+                    Las solicitudes deberán enviarse a secretaria@prounap.cl.</p>
+                <li>
+                    <span id="pesada">8. Uso de cookies y tecnologías similares</span>
+                    <p>El sitio web puede utilizar cookies necesarias para el funcionamiento del portal, análisis de
+                    tráfico y mejora de experiencia del usuario. Las cookies no almacenan datos personales sin
+                    consentimiento previo. El usuario puede configurar su navegador para gestionar o deshabilitar las
+                    cookies.</p>
+                </li>
+                <li>
+                    <span id="pesada">9. Transferencia internacional de datos</span>
+                    <p>Prounap no realiza transferencias internacionales de datos personales. En caso de ser necesario (por
+                    ejemplo, al usar herramientas alojadas fuera de Chile), se garantizará el cumplimiento de estándares
+                    de seguridad equivalentes o superiores a los establecidos por la legislación nacional.</p>
+                </li>
+                <li>
+                    <span id="pesada">10. Conservación y actualización de la información</span>
+                    <p>Los datos se conservarán solo mientras sean necesarios para cumplir las finalidades descritas o
+                    según lo requiera la ley. Posteriormente, serán eliminados de forma segura o anonimizados para fines
+                    estadísticos o académicos.</p>
+                </li>
+                <li>
+                    <span id="pesada">11. Modificaciones a la Política de Privacidad</span>
+                    <p>Prounap podrá actualizar esta política periódicamente para reflejar cambios normativos, tecnológicos
+                    o institucionales. Toda modificación será publicada en el sitio web, indicando la fecha de la última
+                    actualización.</p>
+                </li>
+                <li>
+                    <span id="pesada">12. Contacto</span>
+                    <p>Para consultas, reclamos o ejercicio de derechos, puede dirigirse a:
+                    Correo electrónico: secretaria@prounap.cl
+                    Entidad responsable: Red de Profesionales y Exalumnos de la Universidad Arturo Prat (Prounap).</p>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- FOOTER xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
     <footer class="footer-mw">
         <!-- Logo e íconos sociales -->
         <div class="container-xl footer-logo-social">
@@ -247,6 +273,7 @@
         <div class="footer-bottom pb-4">
             © 2025 Prounap. Todos los derechos reservados.
         </div>
+
         <button id="back-to-top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'})">
             <span><i class="bi bi-chevron-up"></i></span>
         </button>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quiénes Somos :: Prounap</title>
+    <title>Únete :: Prounap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.png">
 
@@ -30,112 +30,77 @@
 <body class="bg-light">
 
     <!-- Navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white shadow-sm py-0">
-        <div class="container-fluid">
-            <a class="navbar-brand me-3" href="#">
-                <img src="img/logo3.png" height="48" alt="Logo">
-            </a>
-            <!-- Botón hamburguesa -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="mainNav">
-                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
-
-                    <li class="nav-item"><a class="nav-link" href="index.html" target="_self">HOME</a>
-                    </li>
-
-                    <!-- QUIÉNES SOMOS -->
-
-                    <li class="nav-item active"><a class="nav-link" href="quienes-somos.html" target="_self">Quiénes
-                            Somos</a></li>
-
-                    <!-- RED PROFESIONAL -->
-
-                    <li class="nav-item"><a class="nav-link" href="red-profesional.html" target="_self">Red
-                            Profesional</a>
-                    </li>
-
-                    <!-- REFLEXIONES -->
-
-                    <li class="nav-item"><a class="nav-link" href="reflexiones.html" target="_self">Reflexiones</a>
-                    </li>
-
-                    <!-- ÚNETE -->
-
-                    <li class="nav-item"><a class="nav-link" href="unete.html" target="_self">Únete</a>
-                    </li>
-
-                    <li class="nav-item"><a class="nav-link" href="contacto.html" target="_self">Contacto</a>
-                    </li>
-
-                </ul>
-                <!-- Login y Registro a la derecha -->
-                <div class="d-flex ms-lg-3">
-                    <a href="#" target="_self" class="btn btn-outline-primary me-2">Login</a>
-                    <!-- <a href="#" target="_self" class="btn btn-primary me-2">Registro</a> -->
-                </div>
-                <div>
-                    <a href="https://prounap.cl/webmail" target="_blank" class="webmail-icon-link me-2">
-                        <i class="bi bi-envelope-check-fill"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <?php
+        require_once 'includes/nav1.php'; 
+    ?>
     <!-- fin del nav -->
 
 
-    
-    <!-- Sección 3 - Qs-->
-    <section class="section-featured bg-white py-5"
-        style="background: url('img/pimg16.jpg') center center / cover no-repeat;">
-        <div class="container py-5">
-            <h2 class="display-4 fw-bold text-center mb-5 text-white">Quiénes Somos</h2>
-            <div class="row align-items-center">
-                <!-- Contenedor Izquierda: Imagen -->
-                <div class="col-md-6 d-flex justify-content-center">
-                    <img src="img/pimg2.jpg" alt="Imagen destacada" class="img-fluid rounded-4"
-                        style="height:660px; object-fit:cover; max-width:100%;">
-                </div>
-                <!-- Contenedor Derecha: Texto, bullets y botón -->
-                <div class="col-md-6 d-flex flex-column justify-content-center px-md-5 mt-4 mt-md-0">
-                    <p class="lead mb-4 text-white">
-                        Toda buena relación comienza con una presentación, permítanos dar el inicio:
-                    </p>
-                    <ul class="feature-list mb-4">
-                        <li>
-                            <p class="lead mb-2 text-white">Somos la Asociación de Egresados y Titulados de la
-                                Universidad Arturo Prat (PROUNAP).</p>
-                        </li>
-                        <li>
-                            <p class="lead mb-2 text-white">Somos una red que reúne a profesionales de todas las
-                                carreras de la Universidad Arturo Prat, fundada en 2018 en Iquique. PROUNAP tiene como
-                                finalidad principal:
-                            </p>
-                        </li>
-                        <li>
-                            <p class="lead mb-2 text-white">Fortalecer la vinculación, colaboración y apoyo mutuo entre
-                                sus miembros, promoviendo el desarrollo profesional, la excelencia académica y el
-                                compromiso social.
-                            </p>
-                        </li>
-                        <li>
-                            <p class="lead mb-2 text-white">Impulsamos actividades, proyectos y espacios de
-                                perfeccionamiento, con principios de ética, transparencia y servicio.
-                            </p>
-                        </li>
-                        <li>
-                            <p class="lead mb-2 text-white">Nuestra red fomenta la integración activa, la participación
-                                democrática y la contribución positiva al entorno universitario y a la sociedad en
-                                general.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div> 
-    </section>
+<!-- Sección 6A Únete -->
+<section class="section-featured bg-white"
+         style="background-image:url('img/pimg23.jpg'); background-size:cover; min-height:1000px;">
+    <div class="container-fluid px-0">
+        <div class="d-flex flex-row align-items-stretch" style="min-height:1000px;">
+            <!-- Izquierdo: barra amarilla -->
+            <div class="container-izquierdo d-flex flex-column justify-content-between"
+                 style="width:50px; min-width:50px; max-width:50px;">
+            </div>
+            <!-- columna espaciadora -->
+            <div class="container-izquierdo d-flex flex-column justify-content-between"
+                 style="width:850px; min-width:150px; max-width:850px;">
+            </div>
+            <!-- Contenido: verde, título, texto, botón -->
+            <div class="container-contenido d-flex flex-column justify-content-center align-items-start p-4"
+                 style="flex:2 1 320px; min-width:240px;">
+                <h2 class="display-4 fw-bold mb-3" style="color:#e7e309;">Únete a Prounap</h2>
+                <p class="text-white lead mb-3">
+                    La Red está en desarrollo.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Sección 6 Únete -->
+<section class="section-featured bg-white"
+         style="background-image:url('img/pimg21.jpg'); background-size:cover; min-height:1000px;">
+    <div class="container-fluid px-0">
+        <div class="d-flex flex-row align-items-stretch" style="min-height:1000px;">
+            <!-- Izquierdo: barra amarilla -->
+            <div class="container-izquierdo d-flex flex-column justify-content-between"
+                 style="width:50px; min-width:50px; max-width:50px;">
+            </div>
+            <!-- Flor: imagen de fondo -->
+            <div class="container-flor d-flex flex-column justify-content-center align-items-center"
+                 style="flex:1 1 180px; min-width:120px; max-width:340px; background: url('img/pimg22.jpg') center center / cover no-repeat; border-radius:0;">
+                <!-- Si quieres poner una flor SVG o imagen adicional, agrégala aquí -->
+            </div>
+            <!-- columna espaciadora -->
+            <div class="container-izquierdo d-flex flex-column justify-content-between"
+                 style="width:150px; min-width:150px; max-width:150px;">
+            </div>
+            <!-- Contenido: verde, título, texto, botón -->
+            <div class="container-contenido d-flex flex-column justify-content-center align-items-start p-4"
+                 style="flex:2 1 320px; min-width:240px;">
+                <h2 class="display-4 fw-bold mb-3" style="color:#fff;">Únete a Prounap</h2>
+                <p class="text-white lead mb-3">
+                    La Red está en desarrollo.
+                </p>
+                <p class="text-white lead mb-3">
+                    Pronto habilitaremos un formulario de registro. Ahora mismo, puedes escribir a secretaria@prounap.cl y se pondrán en contacto contigo.
+                </p>
+                <p class="text-white lead mb-3">
+                    Te invitamos a ser parte de la Red de profesionales y exalumnos de Universidad Arturo Prat.
+                </p>
+                <p class="text-white lead mb-3">
+                    La clave está en aprender a ser competitivos con colaboración interna.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- FOOTER -->
     <footer class="footer-mw">
