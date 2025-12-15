@@ -845,7 +845,7 @@ main {
 .instrucciones-section {
   width: 100%;
   max-width: 1200px;
-  min-height: 100vh; /* Altura del section */
+  min-height: 100vh; /* Altura del section v0*/
   height: auto;
   background-color: #004779;
   display: flex;
