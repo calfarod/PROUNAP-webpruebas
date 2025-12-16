@@ -106,7 +106,7 @@
 
         <!-- Copyright & subir -->
         <div class="footer-bottom pb-4">
-            © 2025 Prounap ::: Todos los derechos reservados.
+            © 2025 Prounap. Todos los derechos reservados.
         </div>
         <button id="back-to-top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'})">
             <span><i class="bi bi-chevron-up"></i></span>

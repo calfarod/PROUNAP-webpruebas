@@ -104,7 +104,7 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- FOOTER .-->
     <?php
         require_once 'includes/footer1.php'; 
     ?>
