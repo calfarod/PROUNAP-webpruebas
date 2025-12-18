@@ -11,7 +11,7 @@
                     <div class="footer-social-icons">
                         <a href="javascript:void(0)" title="@instaprounap" data-bs-toggle="tooltip"><i
                                 class="bi bi-instagram"></i></a>
-                        <a href="javascript:void(0)" title="@fprounap" data-bs-toggle="tooltip"><i
+                        <a href="https://web.facebook.com/redprofesionalesunap" title="@Red de Profesionales Unap" data-bs-toggle="tooltip"><i
                                 class="bi bi-facebook"></i></a>
                         <a href="javascript:void(0)" title="@Xprounap" data-bs-toggle="tooltip"><i
                                 class="bi bi-twitter-x"></i></a>
