@@ -36,7 +36,7 @@
 
     <!-- Navbar -->
     <?php
-        require_once 'includes/nav1.php'; 
+        require_once 'includes/nav2.php'; 
     ?>
     <!-- fin del nav -->
 

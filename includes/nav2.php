@@ -9,12 +9,12 @@
     // Opcional: Si el usuario visita index.php o solo el dominio, 
     // asegura que la variable no esté vacía para activar el enlace "Inicio".
     if (empty($pagina_actual)) {
-        $pagina_actual = 'testfile1.php';
+        $pagina_actual = 'reflexiones.php';
     }
 
     // Determinamos cuáles son las páginas en que debe buscar coincidencias
     // Creamos un array con las páginas que activan este menú
-    $paginas_reflexiones = ['reflexiones.php', 'noticias.php', 'reportajes.php', 'testfile.php', 'testfile1.php']; 
+    $paginas_reflexiones = ['reflexiones.php', 'noticias.php', 'reportajes.php']; 
 ?>    
    
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white shadow-sm py-0">
@@ -52,10 +52,10 @@
                         Reflexiones
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownReflexiones">
-                        <li><a class="dropdown-item <?php if ($pagina_actual == 'reflexiones.php') echo 'active'; ?>" href="reflexiones.php">Reflexión</a></li>
+                        <li><a class="dropdown-item" href="reflexiones.php">Reflexión</a></li>
                         <!-- <li><hr class="dropdown-divider"></li> -->
-                        <li><a class="dropdown-item <?php if ($pagina_actual == 'noticias.php') echo 'active'; ?>" href="noticias.php">Noticias</a></li>
-                        <li><a class="dropdown-item <?php if ($pagina_actual == 'reportajes.php') echo 'active'; ?>" href="reportajes.php">Reportajes</a></li>
+                        <li><a class="dropdown-item" href="noticias.php">Noticias</a></li>
+                        <li><a class="dropdown-item" href="reportajes.php">Reportajes</a></li>
                     </ul>
                 </li>
                 <li class="nav-item <?php if ($pagina_actual == 'unete.php') echo 'active'; ?>">
@@ -70,6 +70,16 @@
                 </li>
 
             </ul>
+            <!-- Login y Registro a la derecha -->
+            <div class="d-flex ms-lg-3">
+                <a href="#" target="_self" class="btn btn-outline-primary me-2">Login</a>
+                <!-- <a href="#" target="_self" class="btn btn-primary me-2">Registro</a> -->
+            </div>
+            <div>
+                <a href="https://prounap.cl/webmail" target="_blank" class="webmail-icon-link me-2">
+                    <i class="bi bi-envelope-check-fill"></i>
+                </a>
+            </div>
         </div>
     </div>
 </nav>
