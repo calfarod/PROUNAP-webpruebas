@@ -16,7 +16,8 @@ body {
 h1,
 h2 {
   font-family: "Chillax Variable", Arial, sans-serif;
-  font-weight: 200;
+  font-weight: 400;
+  margin-top: 40;
 }
 
 /* Subtítulos y títulos de tarjetas */
@@ -26,9 +27,9 @@ h5,
 h6,
 .card-title {
   font-family: "Chillax Variable", Arial, sans-serif;
-  font-weight: 500;
-  margin-top: 20px;
-  margin-bottom: 5px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 /* Párrafos y textos secundarios */
@@ -40,7 +41,7 @@ p,
 
 .lead {
   font-family: "Chillax Variable", Arial, sans-serif;
-  font-weight: 350;
+  font-weight: 450;
   font-size: 1.2rem;
   text-align: justify; /* justifica ambos bordes */
   text-justify: inter-word; /* mejora justificado (IE/Edge) */
@@ -52,6 +53,35 @@ p,
   /* Tamaño ligeramente mayor para destacar */
 }
 
+ul.lista {
+  font-family: "Chillax Variable", Arial, sans-serif;
+  font-weight: 450;
+  font-size: 1.2rem;
+  text-align: justify; /* justifica ambos bordes */
+  text-justify: inter-word; /* mejora justificado (IE/Edge) */
+  hyphens: auto; /* permite guionado automático en cortes de palabra */
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  text-align-last: left;
+  margin-bottom: 0px;
+}
+
+li.bibliografia {
+  font-family: "Chillax Variable", Arial, sans-serif;
+  font-weight: 150;
+  font-size: 0.8rem;
+  text-align: justify; /* justifica ambos bordes */
+  text-justify: inter-word; /* mejora justificado (IE/Edge) */
+  hyphens: auto; /* permite guionado automático en cortes de palabra */
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  text-align-last: left;
+  margin-bottom: 0px;
+}
+
+.semi-bold {
+  font-weight: 550;
+}
 /* inicio nav1.php */
 .navbar-nav .nav-item.active .nav-link {
   /* Aumenta el grosor de la fuente. 
@@ -165,7 +195,7 @@ p,
 /* secciones */
 .section-dinamica {
   /* La ruta de tu imagen */
-  background-image: url("../img/pimg20.jpg");
+  /* background-image: url("../img/pimg20.jpg"); */
 
   /* 'cover' asegura que la imagen cubra todo el espacio sin deformarse */
   background-size: cover;
@@ -187,6 +217,26 @@ p,
   align-items: center;
 }
 
+.section-dinamica.fondo0 {
+  /* La ruta de tu imagen */
+  background-image: url("../img/fondo0.jpg");
+}
+
+.section-dinamica.fondo1 {
+  background-image: url("../img/fondo1.jpg");
+}
+
+.section-dinamica.fondo2 {
+  background-image: url("../img/fondo2.jpg");
+}
+
+.section-dinamica.fondo3 {
+  background-image: url("../img/fondo3.jpg");
+}
+
+.section-dinamica.fondo4 {
+  background-image: url("../img/fondo4.jpg");
+}
 /* Opcional: Un fondo semi-transparente para que el texto sea legible */
 .bg-light-transparent {
   background-color: rgba(255, 255, 255, 0.85);
@@ -197,8 +247,10 @@ p,
   max-width: 70%; /* Ancho máximo del 80% del contenedor */
   height: auto; /* Altura automática (mantiene proporción) */
   display: block; /* Para aplicar márgenes */
+  margin-top: 20px;
   margin-left: auto; /* Centra horizontalmente */
   margin-right: auto;
+  margin-bottom: 20px;
   border-radius: 8px; /* Esquinas redondeadas (opcional) */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra (opcional) */
 }
@@ -217,6 +269,10 @@ p,
   flex: 1 1 200px; /* Ancho mínimo 300px, crece/se reduce proporcionalmente */
   max-width: 350px; /* Ancho máximo */
   height: auto;
+  margin-top: 20px;
+  margin-left: auto; /* Centra horizontalmente */
+  margin-right: auto;
+  margin-bottom: 20px;
   border-radius: 8px; /* Esquinas redondeadas */
 }
 
@@ -1032,6 +1088,9 @@ section-gradient1 {
 
   h2.display-4 {
     font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: #004068;
   }
 }
 
@@ -1634,3 +1693,4 @@ autor p {
   color: #ff7f00;
   font-weight: 380;
 }
+
